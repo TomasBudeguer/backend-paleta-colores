@@ -3,6 +3,7 @@ import morgan from "morgan";
 import cors from 'cors'
 import path from 'path'
 import './database'
+import coloresRouter from "./routes/colores.routes";
 
 const app = express();
 
@@ -21,4 +22,4 @@ app.use(express.static(path.join(__dirname, '../public')))
 
 // RUTAS:
 // http://localhost:4000/
-
+app.use('/apicolores', coloresRouter)
