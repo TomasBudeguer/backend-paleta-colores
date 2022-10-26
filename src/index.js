@@ -21,6 +21,4 @@ app.use(express.static(path.join(__dirname, '../public')))
 
 // RUTAS:
 // http://localhost:4000/
-app.get('/colores', (req, res)=>{
-    res.send('Esto es una prueba de la peticion GET de colores')
-})
+
