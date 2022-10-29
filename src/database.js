@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const url = "mongodb://localhost:27017/paleta-colores";
+const url = "mongodb://localhost:27017/colores";
 
 mongoose.connect(url);
 

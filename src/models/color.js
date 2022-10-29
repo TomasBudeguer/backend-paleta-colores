@@ -1,24 +1,12 @@
 import mongoose, { Schema } from "mongoose";
 
 const coloresSchema = new Schema({
-  nombreColor: {
+  color: {
     type: String,
     required: true,
     unique: true,
     minLength: 4,
-    maxLength: 20,
-  },
-  hexadecimal: {
-    type: String,
-    unique: true,
-    minLength: 6,
-    maxLength: 6,
-  },
-  rgbOrgba: {
-    type: String,
-    unique: true,
-    minLength: 4,
-    maxLength: 50,
+    maxLength: 25,
   },
 });
 
